@@ -48,7 +48,7 @@ parameters {
 
 model {
     // Priors on model parameters -- this is where we encode our previous befliefs about the system in the model
-    s ~ normal(1e5, 3e4);
+    s ~ normal(1e5, 5e4);
     b ~ normal(0.3, 0.25);
     d ~ normal(0.6, 0.25);
     sigma ~ normal(0.5, 0.5);            // noise in the data -- we estimate this too! pretty cool!
