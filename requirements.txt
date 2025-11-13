@@ -1,7 +1,9 @@
-numpy
+numpy<2.0
 pandas
 matplotlib
-arviz
 cmdstanpy
 scipy
 seaborn
+torch
+plotly
+scikit-learn
