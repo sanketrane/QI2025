@@ -6,20 +6,35 @@ This repository contains materials for the QI2025 workshop on Bayesian modeling 
 
 ### 📂 Projects
 
-- **Population Growth Perturbations**: Bayesian models for population dynamics using Stan
-  - Logistic growth models
-  - Homogeneous models
-  - Treatment effect analysis
-  
-- **Pulse Chase Exercise**: BrdU pulse-chase data analysis and visualization
+1. **Population Growth Perturbations** (`population_growth_perturbations/`)
+   - Bayesian models for population dynamics using Stan
+   - Logistic growth models (with and without treatment effects)
+   - Simple homogeneous models (with and without treatment effects)
+   - Observed data with treatment analysis 
 
-- **Spatial 3D**: Stochastic SIRS spatial modeling
+2. **Pulse Chase Exercise** (`Pulse_chase_exercise/`)
+   - BrdU pulse-chase data analysis and visualization
 
-- **Trajectory Inference**: Potential trajectory analysis with GFP data
+3. **Spatial 3D** (`spatial_3d/`)
+   - Stochastic SIRS spatial modeling
 
-### 📓 NEED INSTALLATION
+4. **VAE Deep Learning** (`Vae_deeplearn/`)
+   - Cell-wise VAE implementation
+   - Deep learning models for single-cell data analysis
 
-- `run_stan.ipynb` - CmdStan installation and setup
+5. **Trajectory Inference** (`Trajectory_inference/`)
+   - Potential trajectory analysis with GFP data
+   - Interactive HTML visualization outputs
+
+6. **Conditional VAE** (`conditional_VAE/`)
+   - Dynamic model inference with single-cell flow data
+   - Combines dynamic modeling with single-cell type data using Pyro
+   - Includes Pyro 101 tutorial and dynamical model fitting
+   - Simulated time series datasets with ground truth weights
+
+### 📓 Setup Notebooks
+
+- `run_stan.ipynb` - CmdStan installation and setup guide
 
 ## Getting Started
 
@@ -61,21 +76,31 @@ Please refer to **[SETUP.md](SETUP.md)** for step-by-step guidance.
 ## Dependencies
 
 The project uses the following Python packages (see `requirements.txt`):
-- `numpy` (<2.0)
-- `pandas`
-- `matplotlib`
-- `cmdstanpy`
-- `scipy`
-- `seaborn`
-- `torch`
-- `plotly`
-- `scikit-learn`
+- `numpy` - Numerical computing
+- `pandas` - Data manipulation and analysis
+- `matplotlib` - Plotting and visualization
+- `cmdstanpy` - Python interface for Stan
+- `scipy` - Scientific computing
+- `seaborn` - Statistical data visualization
+- `torch` - PyTorch deep learning framework
+- `pyro-ppl` - Pyro probabilistic programming
+- `plotly` - Interactive visualizations
+- `scikit-learn` - Machine learning tools
+- `tqdm` - Progress bars
+- `umap-learn` - Dimensionality reduction
 
-## Stan Models
+## Key Frameworks
 
+### Stan Models
 Stan models are located in `population_growth_perturbations/stan_models/`:
 - Logistic growth models (with and without treatment effects)
 - Simple homogeneous models (with and without treatment effects)
+
+### Pyro Framework
+The `conditional_VAE/` project uses Pyro for probabilistic programming:
+- Variational inference with conditional VAE
+- Dynamic systems modeling with single-cell data
+- Built on PyTorch for deep learning integration
 
 ## Contributing
 
@@ -83,10 +108,15 @@ This repository is for workshop materials. For questions or issues, please conta
 
 ## Resources
 
+### Documentation
 - [Stan Documentation](https://mc-stan.org/docs/)
 - [CmdStanPy Documentation](https://mc-stan.org/cmdstanpy/)
-- [VS Code Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [VS Code Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Pyro Documentation](https://pyro.ai/)
+- [PyTorch Documentation](https://pytorch.org/docs/)
+
+### VS Code Extensions
+- [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 ## License
 
