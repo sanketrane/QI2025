@@ -7,3 +7,4 @@ seaborn
 torch
 plotly
 scikit-learn
+pyro-ppl
