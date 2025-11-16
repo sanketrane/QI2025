@@ -17,7 +17,7 @@ This repository contains materials for the QI2025 workshop on Bayesian modeling 
 
 - **Trajectory Inference**: Potential trajectory analysis with GFP data
 
-### 📓 Notebooks
+### 📓 NEED INSTALLATION
 
 - `run_stan.ipynb` - CmdStan installation and setup
 
@@ -28,15 +28,6 @@ This repository contains materials for the QI2025 workshop on Bayesian modeling 
 - Python 3.8 or higher
 - [Visual Studio Code](https://code.visualstudio.com/) (recommended)
 
-### Setup Instructions
-
-For detailed setup instructions, including:
-- Creating a Python virtual environment
-- Installing dependencies
-- Configuring CmdStan for Bayesian modeling
-- Selecting the correct kernel in VS Code
-
-Please refer to **[SETUP.md](SETUP.md)** for step-by-step guidance.
 
 ### Quick Start
 
@@ -55,6 +46,17 @@ pip install -r requirements.txt
 # Open in VS Code
 code .
 ```
+
+### Setup Instructions
+
+For detailed setup instructions, including:
+- Creating a Python virtual environment
+- Installing dependencies
+- Configuring CmdStan for Bayesian modeling
+- Selecting the correct kernel in VS Code
+
+Please refer to **[SETUP.md](SETUP.md)** for step-by-step guidance.
+
 
 ## Dependencies
 
