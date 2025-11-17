@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 This will install the following packages:
-- numpy (<2.0)
+- numpy
 - pandas
 - matplotlib
 - cmdstanpy
@@ -96,6 +96,13 @@ If the virtual environment doesn't appear in the kernel selector:
 The `run_stan.ipynb` notebook includes macOS-specific fixes for C++ compilation issues. If you encounter problems:
 - Ensure Xcode Command Line Tools are installed: `xcode-select --install`
 - Verify the SDK path is correctly set by running: `xcrun --show-sdk-path`
+
+If you run into cmdstan installaion:
+Open the terminal in VS code, make sure you are in the created venv and run:
+
+```bash
+install_cmdstan
+```
 
 ## Deactivating the Virtual Environment
 

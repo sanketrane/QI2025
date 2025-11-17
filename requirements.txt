@@ -1,4 +1,4 @@
-numpy<2.0
+numpy
 pandas
 matplotlib
 cmdstanpy
@@ -9,3 +9,6 @@ plotly
 scikit-learn
 pyro-ppl
 tqdm
+umap-learn
+ipywidgets
+jupyter
