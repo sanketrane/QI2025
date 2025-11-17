@@ -41,6 +41,7 @@ This repository contains materials for the QI2025 workshop on Bayesian modeling 
 ### Prerequisites
 
 - Python 3.8 or higher
+- **Note: Python 3.14** may be incompatible with some dependencies. Most likely suspect is `umap-learn`. Either comment out `umap-learn` in the `requirements.txt` file or try `umap` if observed any issues in installation.
 - [Visual Studio Code](https://code.visualstudio.com/) (recommended)
 
 
