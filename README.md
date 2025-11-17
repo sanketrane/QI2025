@@ -104,6 +104,11 @@ The `conditional_VAE/` project uses Pyro for probabilistic programming:
 
 ## Contributing
 
+**Sanket Rane**
+**Chrsi van Dorp**
+**Marek Kampa**
+**Kangyu Zhao**
+
 This repository is for workshop materials. For questions or issues, please contact the workshop organizers.
 
 ## Resources

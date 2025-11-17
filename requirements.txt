@@ -10,3 +10,4 @@ scikit-learn
 pyro-ppl
 tqdm
 umap-learn
+ipywidgets
