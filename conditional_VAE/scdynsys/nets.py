@@ -5,13 +5,11 @@ Neural Network Layers for use in GMM models
 import torch
 import torch.nn as nn
 from pyro.nn.module import PyroModule
-from typing import Literal
 
 
 class DecoderX(PyroModule):
     """
-    Use a Gaussian mixture model on the latent space to cluster the data.
-    This is the decoder network.
+    This is the decoder network for X (loc and scale), given Z.
     """
     def __init__(
         self, 
@@ -50,7 +48,6 @@ class DecoderX(PyroModule):
 
 class EncoderZ(PyroModule):
     """
-    Use a Gaussian mixture model on the latent space to cluster the data.
     This is the encoder network for Z (loc and scale), given X.
     """
     def __init__(
@@ -90,7 +87,6 @@ class EncoderZ(PyroModule):
 
 class CondEncoderZ(PyroModule):
     """
-    Use a Gaussian mixture model on the latent space to cluster the data.
     This is the encoder network for Z (loc and scale), given X.
     This is a conditional encoder that also takes time as input.
     """
